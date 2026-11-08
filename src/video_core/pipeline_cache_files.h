@@ -44,7 +44,7 @@ static_assert(IsOlderVersionList(CompatibleVulkanPipelineCacheVersions,
                                  VulkanPipelineCacheVersion));
 // A version with another record layout must not start from these: their files would be read as
 // its own. Check the list whenever the version changes, then update this.
-static_assert(VulkanPipelineCacheVersion == 54,
+static_assert(VulkanPipelineCacheVersion == 55,
               "Check CompatibleVulkanPipelineCacheVersions against the new version");
 
 // Official Eglantine (cache version 18 at c0cb3325) and this fork (a different version) both
